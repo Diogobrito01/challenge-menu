@@ -44,3 +44,33 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+Foram instaladas as dependências para auxílio no desenvolvimento:
+Dependências
+Aqui está uma lista das dependências instaladas no projeto com uma breve descrição de cada uma:
+
+@emotion/react: Biblioteca de CSS-in-JS para estilizar componentes React.
+@emotion/styled: Ferramenta para criar componentes estilizados com Emotion.
+@mui/icons-material: Conjunto de ícones para Material-UI.
+@mui/material: Biblioteca de componentes UI baseada em Material Design.
+@reduxjs/toolkit: Toolkit oficial para Redux, para simplificar a escrita de lógica Redux.
+@testing-library/jest-dom: Extensões para testar DOM com Jest.
+@testing-library/react: Utilitários para testar componentes React.
+@testing-library/user-event: API para simular interações do usuário em testes.
+@types/jest: Tipos TypeScript para Jest.
+@types/node: Tipos TypeScript para Node.js.
+@types/react: Tipos TypeScript para React.
+@types/react-dom: Tipos TypeScript para React DOM.
+@types/react-router-dom: Tipos TypeScript para React Router DOM.
+axios: Cliente HTTP baseado em Promises para fazer requisições HTTP.
+http-proxy-middleware: Middleware para criar proxies HTTP.
+lodash: Biblioteca utilitária que oferece suporte a operações comuns de programação.
+react: Biblioteca para construir interfaces de usuário.
+react-dom: Pacote que fornece métodos específicos do DOM que podem ser usados no nível superior de uma aplicação React.
+react-redux: Integração de React com Redux.
+react-router-dom: Roteador para aplicações React.
+react-scripts: Scripts e configuração usada por Create React App.
+styled-components: Biblioteca para estilização de componentes React usando tagged template literals.
+typescript: Superset de JavaScript que adiciona tipagem estática opcional.
+web-vitals: Biblioteca para medir métricas de desempenho de web vitals.

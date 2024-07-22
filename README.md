@@ -45,6 +45,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## COMENTÁRIOS ADICIONAIS
 
 **Utilizei React com Typescript, utilizei o Materialize (MUI), para importações de bibliotecas e design, utilizei redux, hooks.**
 

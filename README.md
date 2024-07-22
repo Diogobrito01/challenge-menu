@@ -46,10 +46,15 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
+**Utilizei React com Typescript, utilizei o Materialize (MUI), para importações de bibliotecas e design, utilizei redux, hooks.**
+**Para chamar a API, foi utilizado o reduxjs/toolkit, pela a funcionalidade createAsyncThumk e createSlice para adicionar informações de detalhes para serem utilizadas no Store.**
+**Pelo o tempo hábil, não desenvolvi algumas partes, como a adição do contador de itens ao lado do item da listagem, entre outros ajustes que são necessários,**
+**Algumas imagens não estão disponíveis, provavelmente por conta do servidor de imagens, estão quebradas.**
+**Iria criar alguns componentes para internacionalizar os padrões monetários por região, a priori deixei o padrão PT-BR.**
+
+
 Foram instaladas as dependências para auxílio no desenvolvimento:
 Dependências
-Aqui está uma lista das dependências instaladas no projeto com uma breve descrição de cada uma:
-
 @emotion/react: Biblioteca de CSS-in-JS para estilizar componentes React.
 @emotion/styled: Ferramenta para criar componentes estilizados com Emotion.
 @mui/icons-material: Conjunto de ícones para Material-UI.
@@ -74,3 +79,22 @@ react-scripts: Scripts e configuração usada por Create React App.
 styled-components: Biblioteca para estilização de componentes React usando tagged template literals.
 typescript: Superset de JavaScript que adiciona tipagem estática opcional.
 web-vitals: Biblioteca para medir métricas de desempenho de web vitals.
+
+Visão Geral do Diretório Store
+index.ts
+Este arquivo configura e exporta a store do Redux, combinando todos os slices individuais (restaurant e basket) em um único root reducer e configurando os tipos necessários para a aplicação.
+restaurantSlice.ts
+Este slice gerencia o estado relacionado aos detalhes do restaurante e às informações do menu. Inclui thunks assíncronos para buscar detalhes do restaurante e do menu do servidor, lidando com estados de carregamento, sucesso e erro.
+basketSlice.ts
+Este slice gerencia o estado do carrinho de compras, lidando com ações para adicionar, incrementar, decrementar e remover itens do carrinho. Mantém tanto a lista de itens quanto um mapa de quantidades para rastrear contagens de itens de forma única por id e opções selecionadas.
+
+Componentes
+Cart.tsx - Exibe os itens adicionados ao carrinho. Permite ao usuário ajustar a quantidade de cada item ou removê-los completamente. Mostra o subtotal e o total do carrinho.
+Header.tsx - Exibe o cabeçalho do site, incluindo a imagem do banner do restaurante e botões de navegação (MENU, LOGIN, CONTACT).
+ItemModal.tsx - Modal que permite ao usuário selecionar opções (como quantidade de carnes) e quantidade de um item antes de adicioná-lo ao carrinho.
+MenuItem.tsx - Exibe informações de um item do menu, incluindo nome, descrição, preço e imagem. Mostra a quantidade do item no carrinho.
+MenuSection.tsx - Agrupa e exibe os itens do menu em seções, como "Burgers" e "Drinks".
+MenuTabs.tsx - Exibe abas de navegação para diferentes seções do menu, permitindo que o usuário mude entre elas.
+RemoveItemConfirmation.tsx - Modal que solicita a confirmação do usuário para remover um item do carrinho.
+SearchBar.tsx - Barra de pesquisa que permite ao usuário procurar por itens no menu.
+SectionIcons.tsx - Exibe ícones representando as diferentes seções do menu, permitindo que o usuário navegue entre elas.
